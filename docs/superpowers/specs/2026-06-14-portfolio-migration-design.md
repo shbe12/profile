@@ -39,7 +39,7 @@
 **Social/Media links**
 - LinkedIn: https://www.linkedin.com/in/sherline-bertrand-20b210197/
 - Email: sherlinebertrand@gmail.com
-- GitHub: (user to provide URL — placeholder for now)
+- GitHub: https://github.com/shbe12
 
 ---
 
