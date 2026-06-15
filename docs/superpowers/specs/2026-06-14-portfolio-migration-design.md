@@ -32,8 +32,9 @@
 - Realtime: WebSockets, Action Cable
 
 **Projects**
-- ChairHop — AI-powered salon booking platform. AI assistant helps users find available appointments conversationally, reducing manual search. Built with Rails, JS, Bootstrap, OpenAI API, WebSockets, Action Cable, Heroku, Cloudinary.
+- **ChairHop** — Two-sided booking marketplace connecting clients with independent hair stylists. Stylists manage services, locations, and availability; clients discover stylists, book appointments, and pay a 50% deposit via Square at booking. Features HOPPS, an AI assistant (GPT-4o / GPT-4.1-nano via RubyLLM) that helps clients find local stylists and answers hair questions, and guides stylists through the platform. Includes real-time direct messaging (Action Cable / Solid Cable), pgvector-powered appointment search, Square payment integration with card vaulting and webhooks, portfolio photo uploads, analytics dashboard, and review system with photo support.
   - Repo: https://github.com/WanjiKay/ChairHop_App_2
+  - Tech stack: Rails 7.1, PostgreSQL, pgvector, OpenAI GPT-4o, RubyLLM, Square Payments, Hotwire / Turbo / Stimulus, Bootstrap 5.3, Action Cable, Solid Queue, Active Storage, Cloudinary, Devise, Pundit, Heroku
 
 **Social/Media links**
 - LinkedIn: https://www.linkedin.com/in/sherline-bertrand-20b210197/
