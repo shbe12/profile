@@ -1,3 +1,6 @@
+import presentImg from "../assets/Present.png";
+import chairhopImg from "../assets/Chairhop.png";
+
 export interface Project {
   id: string;
   title: string;
@@ -33,6 +36,7 @@ export const projects: Project[] = [
       "AWS EC2",
     ],
     repoUrl: "https://github.com/shbe12/Present",
+    imageUrl: presentImg,
   },
   {
     id: "chairhop",
@@ -63,5 +67,7 @@ export const projects: Project[] = [
       "Heroku",
     ],
     repoUrl: "https://github.com/WanjiKay/ChairHop_App_2",
+    demoUrl: "https://chair-hop.com/",
+    imageUrl: chairhopImg,
   },
 ];

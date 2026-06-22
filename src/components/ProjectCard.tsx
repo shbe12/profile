@@ -6,10 +6,18 @@ interface Props {
 }
 
 export function ProjectCard({ project }: Props) {
+  const linkUrl = project.demoUrl ?? project.repoUrl;
+
   return (
     <Card className={`project-card h-100 ${project.featured ? 'featured-card' : ''}`}>
       {project.imageUrl && (
-        <Card.Img variant="top" src={project.imageUrl} alt={project.title} />
+        linkUrl ? (
+          <a href={linkUrl} target="_blank" rel="noopener noreferrer">
+            <Card.Img variant="top" src={project.imageUrl} alt={project.title} />
+          </a>
+        ) : (
+          <Card.Img variant="top" src={project.imageUrl} alt={project.title} />
+        )
       )}
       <Card.Body className="d-flex flex-column">
         <Card.Title className="d-flex align-items-center flex-wrap gap-2">
