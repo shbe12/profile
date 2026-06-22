@@ -10,6 +10,28 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "present",
+    title: "Present",
+    description:
+      "Admin-only attendance and finance tracker for groups — churches, social clubs, sports " +
+      "teams, or community organizations. Admins record attendance per event, and the system " +
+      "automatically charges members for lateness or no-shows. Charges and payments roll up " +
+      "into per-member balances, while a treasury balance tracks group income against expenses. " +
+      "Built with Hotwire for in-place attendance and payment updates, and deployed via Kamal " +
+      "to a single AWS EC2 box running Postgres as a Docker accessory.",
+    techStack: [
+      "Rails 8.1",
+      "PostgreSQL",
+      "Devise",
+      "Hotwire / Turbo / Stimulus",
+      "Bootstrap 5.3",
+      "Solid Queue",
+      "Kamal",
+      "AWS EC2",
+    ],
+    repoUrl: "https://github.com/shbe12/Present",
+  },
+  {
     id: "chairhop",
     title: "ChairHop",
     description:
