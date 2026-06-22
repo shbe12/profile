@@ -15,6 +15,10 @@
   box-shadow: var(--shadow);
 }
 
+.featured-card {
+  border: 2px solid var(--accent-border) !important;
+}
+
 .skill-badge {
   background: var(--accent-bg) !important;
   color: var(--accent) !important;

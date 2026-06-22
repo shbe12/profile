@@ -7,12 +7,16 @@ interface Props {
 
 export function ProjectCard({ project }: Props) {
   return (
-    <Card className="project-card h-100">
+    <Card className={`project-card h-100 ${project.featured ? 'featured-card' : ''}`}>
       {project.imageUrl && (
         <Card.Img variant="top" src={project.imageUrl} alt={project.title} />
       )}
       <Card.Body className="d-flex flex-column">
-        <Card.Title>{project.title}</Card.Title>
+        <Card.Title className="d-flex align-items-center flex-wrap gap-2">
+          {project.title}
+          {project.featured && <Badge bg="success">Primary Project</Badge>}
+          {project.teamProject && <Badge bg="secondary">Team Project</Badge>}
+        </Card.Title>
         <Card.Text>{project.description}</Card.Text>
         <div className="d-flex flex-wrap gap-1 mb-3">
           {project.techStack.map(tech => (

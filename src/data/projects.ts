@@ -6,6 +6,8 @@ export interface Project {
   repoUrl?: string;
   demoUrl?: string;
   imageUrl?: string;
+  featured?: boolean;
+  teamProject?: boolean;
 }
 
 export const projects: Project[] = [
@@ -19,6 +21,7 @@ export const projects: Project[] = [
       "into per-member balances, while a treasury balance tracks group income against expenses. " +
       "Built with Hotwire for in-place attendance and payment updates, and deployed via Kamal " +
       "to a single AWS EC2 box running Postgres as a Docker accessory.",
+    featured: true,
     techStack: [
       "Rails 8.1",
       "PostgreSQL",
@@ -42,6 +45,7 @@ export const projects: Project[] = [
       "conversationally and guides stylists through the platform. Built with real-time " +
       "direct messaging, pgvector-powered appointment search, Square card vaulting, " +
       "portfolio photo uploads, analytics dashboard, and a review system.",
+    teamProject: true,
     techStack: [
       "Rails 7.1",
       "PostgreSQL",
