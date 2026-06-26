@@ -48,4 +48,4 @@ npm run deploy    # build and push to gh-pages branch
 
 ## Deployment
 
-The site is deployed to `https://sherlinebertrand.github.io/profile/`. The `base` path in `vite.config.ts` is set to `/profile/` to match this URL.
+The site is deployed to `https://shbe12.github.io/profile/`. The `base` path in `vite.config.ts` is set to `/profile/` to match this URL.
