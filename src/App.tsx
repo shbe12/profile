@@ -9,9 +9,6 @@ import { SkillsSection } from './components/SkillsSection'
 import { MediaSection } from './components/MediaSection'
 
 function App() {
-  const featuredProject = projects.find(project => project.featured);
-  const otherProjects = projects.filter(project => !project.featured);
-
   return (
     <main>
       <HeroSection bio={bio} />
@@ -19,15 +16,8 @@ function App() {
       <Container>
         <section id="projects" className="py-5">
           <h2 className="mb-4">Projects</h2>
-          {featuredProject && (
-            <Row className="g-4 mb-4">
-              <Col xs={12}>
-                <ProjectCard project={featuredProject} />
-              </Col>
-            </Row>
-          )}
           <Row xs={1} md={2} className="g-4">
-            {otherProjects.map(project => (
+            {projects.map(project => (
               <Col key={project.id}>
                 <ProjectCard project={project} />
               </Col>

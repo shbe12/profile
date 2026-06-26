@@ -11,6 +11,7 @@ export interface Project {
   imageUrl?: string;
   featured?: boolean;
   teamProject?: boolean;
+  demoCredentials?: { email: string; password: string };
 }
 
 export const projects: Project[] = [
@@ -36,7 +37,9 @@ export const projects: Project[] = [
       "AWS EC2",
     ],
     repoUrl: "https://github.com/shbe12/Present",
+    demoUrl: "http://3.99.87.200",
     imageUrl: presentImg,
+    demoCredentials: { email: "you@example.com", password: "StrongPassword123!" },
   },
   {
     id: "chairhop",

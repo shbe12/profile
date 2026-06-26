@@ -26,6 +26,15 @@ export function ProjectCard({ project }: Props) {
           {project.teamProject && <Badge bg="secondary">Team Project</Badge>}
         </Card.Title>
         <Card.Text>{project.description}</Card.Text>
+        {project.demoCredentials && (
+          <div className="mb-3 p-2 rounded" style={{ background: 'var(--bs-light, #f8f9fa)', fontSize: '0.85rem' }}>
+            <strong>Demo login</strong>
+            <div className="mt-1 font-monospace">
+              <div>Email: {project.demoCredentials.email}</div>
+              <div>Password: {project.demoCredentials.password}</div>
+            </div>
+          </div>
+        )}
         <div className="d-flex flex-wrap gap-1 mb-3">
           {project.techStack.map(tech => (
             <Badge key={tech} className="skill-badge">{tech}</Badge>
