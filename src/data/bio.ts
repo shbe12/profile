@@ -30,7 +30,7 @@ export const bio: Bio = {
     "web and AI technologies.",
   location: "Montreal · Open to local & remote opportunities",
   education: "Le Wagon AI Software Development Bootcamp",
-  languages: "French, English, Haitian Creole (fluent) · Italian, Spanish (understanding)",
+  languages: "French, English, Haitian Creole (fluent) · Spanish (understanding)",
   email: "sherlinebertrand@gmail.com",
   linkedin: "https://www.linkedin.com/in/sherline-bertrand-20b210197/",
   github: "https://github.com/shbe12",
