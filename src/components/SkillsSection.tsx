@@ -6,18 +6,22 @@ interface Props {
 }
 
 const CATEGORY_LABELS: Record<Skill['category'], string> = {
-  frontend: 'Frontend',
+  testing: 'Testing & QA',
+  programming: 'Programming',
   backend: 'Backend',
-  ai: 'AI & LLMs',
   tools: 'Tools & Platforms',
+  frontend: 'Frontend',
+  ai: 'AI & LLMs',
   realtime: 'Realtime',
 };
 
 const CATEGORY_ORDER: Skill['category'][] = [
-  'frontend',
+  'testing',
+  'programming',
   'backend',
-  'ai',
   'tools',
+  'frontend',
+  'ai',
   'realtime',
 ];
 

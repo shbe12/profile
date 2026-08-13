@@ -25,15 +25,16 @@ export function ProjectCard({ project }: Props) {
           {project.featured && <Badge bg="success">Primary Project</Badge>}
           {project.teamProject && <Badge bg="secondary">Team Project</Badge>}
         </Card.Title>
+        {project.dateRange && (
+          <div className="text-muted small mb-2">{project.dateRange}</div>
+        )}
         <Card.Text>{project.description}</Card.Text>
-        {project.demoCredentials && (
-          <div className="mb-3 p-2 rounded" style={{ background: 'var(--bs-light, #f8f9fa)', fontSize: '0.85rem' }}>
-            <strong>Demo login</strong>
-            <div className="mt-1 font-monospace">
-              <div>Email: {project.demoCredentials.email}</div>
-              <div>Password: {project.demoCredentials.password}</div>
-            </div>
-          </div>
+        {project.highlights && project.highlights.length > 0 && (
+          <ul className="mb-3">
+            {project.highlights.map(point => (
+              <li key={point}>{point}</li>
+            ))}
+          </ul>
         )}
         <div className="d-flex flex-wrap gap-1 mb-3">
           {project.techStack.map(tech => (
@@ -62,6 +63,9 @@ export function ProjectCard({ project }: Props) {
             </a>
           )}
         </div>
+        {project.demoNote && (
+          <div className="text-muted small mt-2">{project.demoNote}</div>
+        )}
       </Card.Body>
     </Card>
   );
