@@ -45,7 +45,7 @@ export const projects: Project[] = [
       "AWS EC2",
     ],
     repoUrl: "https://github.com/shbe12/Present",
-    demoUrl: "http://3.99.87.200",
+    demoUrl: "https://presentapp.app",
     demoNote: "Demo credentials available upon request.",
     imageUrl: presentImg,
   },
