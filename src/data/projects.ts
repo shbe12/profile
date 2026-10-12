@@ -60,8 +60,8 @@ export const projects: Project[] = [
     id: "review",
     title: "Review",
     description:
-      "Full-stack activity review web app where users share and rate experiences like " +
-      "hiking and kayaking.",
+      "Full-stack review web app where users share and rate any experience they have tried, " +
+      "such as hiking or kayaking.",
     highlights: [
       "Built a REST API with FastAPI, including endpoints to create and retrieve users and reviews.",
       "Designed a relational database with SQLAlchemy and SQLite, modelling a one-to-many relationship between users and their reviews.",
