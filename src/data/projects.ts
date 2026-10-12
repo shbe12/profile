@@ -2,6 +2,7 @@ import presentImg from "../assets/Present.png";
 import chairhopImg from "../assets/Chairhop.png";
 import reviewImg from "../assets/Review.png";
 import mockInterviewImg from "../assets/MockInterview.png";
+import emailAgentImg from "../assets/EmailAgent.png";
 
 export type ProjectStatus = "in-progress" | "on-hold" | "past-contributor";
 
@@ -192,5 +193,6 @@ export const projects: Project[] = [
     repoUrl: "https://github.com/shbe12/Email-Agent",
     demoUrl: "https://email-agent-4vd9e9e7z-personal-projects-25c7.vercel.app/login",
     demoNote: "Sign-in is restricted to the account owner. Demo available upon request.",
+    imageUrl: emailAgentImg,
   },
 ];
