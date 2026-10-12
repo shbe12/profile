@@ -24,6 +24,9 @@ export function ProjectCard({ project }: Props) {
           {project.title}
           {project.featured && <Badge bg="success">Primary Project</Badge>}
           {project.teamProject && <Badge bg="secondary">Team Project</Badge>}
+          {project.status === 'in-progress' && <Badge bg="warning" text="dark">In Progress</Badge>}
+          {project.status === 'on-hold' && <Badge bg="secondary">On Hold</Badge>}
+          {project.status === 'past-contributor' && <Badge bg="light" text="dark">Past Contributor</Badge>}
         </Card.Title>
         {project.dateRange && (
           <div className="text-muted small mb-2">{project.dateRange}</div>

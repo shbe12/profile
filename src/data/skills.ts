@@ -8,7 +8,6 @@ export const skills: Skill[] = [
   { name: "Minitest",               category: "testing"     },
   { name: "pytest",                 category: "testing"     },
   { name: "Unit Testing",           category: "testing"     },
-  { name: "Test Automation",        category: "testing"     },
   { name: "Debugging",              category: "testing"     },
   { name: "Business Rule Validation", category: "testing"   },
 

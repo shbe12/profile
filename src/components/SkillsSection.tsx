@@ -6,7 +6,7 @@ interface Props {
 }
 
 const CATEGORY_LABELS: Record<Skill['category'], string> = {
-  testing: 'Testing & QA',
+  testing: 'Testing',
   programming: 'Programming',
   backend: 'Backend',
   tools: 'Tools & Platforms',
