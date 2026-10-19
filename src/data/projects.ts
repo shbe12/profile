@@ -63,9 +63,10 @@ export const projects: Project[] = [
       "Full-stack review web app where users share and rate any experience they have tried, " +
       "such as hiking or kayaking.",
     highlights: [
-      "Built a REST API with FastAPI, including endpoints to create and retrieve users and reviews.",
-      "Designed a relational database with SQLAlchemy and SQLite, modelling a one-to-many relationship between users and their reviews.",
-      "Validated incoming data and shaped API responses with Pydantic schemas, including rating limits (1–5) and email validation.",
+      "Built a REST API with FastAPI providing full CRUD (create, read, update, delete) endpoints for users and reviews.",
+      "Designed a relational database with SQLAlchemy and SQLite, modelling a one-to-many relationship between users and their reviews, with cascade deletion.",
+      "Converted the database layer to async SQLAlchemy, using eager loading (selectinload) to avoid N+1 queries.",
+      "Validated incoming data and shaped API responses with Pydantic schemas, including rating limits (1–5), email validation and partial updates.",
       "Rendered server-side pages with Jinja2 templates and Bootstrap, including a home feed, single-review pages and per-user review pages.",
       "Built custom error handling that returns JSON for API clients and friendly HTML error pages for website visitors.",
       "Debugged and tested API endpoints with FastAPI’s interactive docs (Swagger UI).",
